@@ -65,14 +65,23 @@ function pesquisar(event) {
 
 
 /*
+
+Trabalhando com Arrays
+
+
 var arrayN1 = ["madrugada", "só", "mais", "algumas", "horas", "pra", "mudar o seu presente"];
 
 arrayN1[1] = "Bora porra";
 console.log(arrayN1.length);
 console.log(arrayN1[1]);
-*/
+
+
+
 
 var vetor = [1,2,3, 'a', "cristiano", 9,5],
+    vetor2 = [2,3,4,10,6,7],
+    resultado1,
+    txt = "",
     resultado = vetor.concat(4,5,6);
 
 console.log(resultado); // concatenado os arrays
@@ -92,4 +101,40 @@ console.log(resultado);
 console.log(resultado.shift());
 console.log(resultado.indexOf('c'));
 console.log(resultado.length);
+console.log(resultado.unshift("fff","re",2));
 
+//console.log(resultado);
+//console.log(resultado.reverse());
+//console.log(resultado.slice(0,3));
+
+
+//console.log(resultado);
+//console.log(resultado.toString());
+
+function par(elemento, indice, objeto) {
+    return elemento % 2 != 0;
+}
+
+
+function multiplicar(elem, indic, obj) {
+  if(elem > 4)
+      return elem * 2;
+  else
+      return elem;
+}
+
+//resultado1 = vetor2.every(par);
+//resultado1 = vetor2.some(par);
+///resultado1 = vetor2.filter(par);
+///vetor2.forEach(par);
+
+
+
+//console.log(txt);
+//console.log(resultado);
+
+
+resultado1 = vetor2.map(multiplicar);
+console.log(resultado1);
+
+ */
