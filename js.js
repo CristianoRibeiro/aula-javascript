@@ -138,3 +138,10 @@ resultado1 = vetor2.map(multiplicar);
 console.log(resultado1);
 
  */
+
+var str = "Revendo javascript para angular 2 e ionic";
+
+console.log(str.charAt(1));
+console.log(str.charCodeAt(1));
+
+console.log(str.indexOf("a"));
